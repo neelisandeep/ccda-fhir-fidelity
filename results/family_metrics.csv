@@ -1,0 +1,9 @@
+family,native_fhir,ccda,converted,export_coverage,conversion_recall_strict,conversion_recall_lenient,conversion_precision_lenient,end_to_end_recall,converted_unmatched
+Condition,12066,12066,12066,1.0,1.0,1.0,1.0,1.0,0
+Procedure,52519,52519,52519,1.0,1.0,1.0,1.0,1.0,0
+Encounter,18234,18234,18234,1.0,0.0,1.0,1.0,1.0,0
+Immunization,4772,4772,4772,1.0,1.0,1.0,1.0,1.0,0
+Medication,16023,16023,16023,1.0,1.0,1.0,1.0,1.0,0
+Allergy,320,320,320,1.0,0.0,0.96875,0.96875,0.96875,10
+Observation,231545,153448,145014,0.6265434364810296,0.9378095511182941,0.9450367551222564,1.0,0.6258869766136173,0
+DiagnosticReport,37005,18771,18771,0.5072557762464531,1.0,1.0,1.0,0.5072557762464531,0
