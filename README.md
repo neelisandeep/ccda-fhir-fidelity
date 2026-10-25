@@ -13,8 +13,16 @@ No real patient data is used.
 ## Requirements
 
 - Java 17+ (for Synthea)
-- Python 3.13
-- `pip install -r requirements.txt`, then `pip install --no-deps python-fhir-converter==0.3.0` (its pinned dependencies do not build on Python 3.13)
+- Python 3.13 (the macOS system `python3` is 3.9 and will not work; use `python3.13`)
+
+```bash
+python3.13 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+pip install --no-deps -r requirements-nodeps.txt
+```
+
+`python-fhir-converter==0.3.0` is kept out of `requirements.txt` because it hard-pins old versions of its dependencies (e.g. `pyjson5==1.6.5`, `lxml==5.3.0`) that do not build on Python 3.13. Installing it with `--no-deps` lets it run on the newer versions in `requirements.txt`; `pip check` will report the version mismatch, which is expected.
 
 ## Reproduce
 

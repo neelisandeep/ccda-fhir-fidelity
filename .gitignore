@@ -1,4 +1,9 @@
 .venv/
-data/
-results/converted/
 __pycache__/
+
+# Synthea jar
+*.jar
+
+# Generated data and outputs
+data/
+results/
